@@ -1,0 +1,1 @@
+# monitoramento-frequ-ncia-cardiaca-smartwatch
