@@ -1,8 +1,8 @@
 const axios = require('axios');
 
 // Configuração do CallMeBot
-const API_KEY = 'SUA_API_KEY_AQUI'; // Ex: chave recebida no WhatsApp
-const NUMERO_DESTINO = '+55SEUNUMEROAQUI'; // Exemplo: +5591999999999
+const API_KEY = '22622214'; // Ex: chave recebida no WhatsApp
+const NUMERO_DESTINO = '+5571989100671'; // Exemplo: +5591999999999
 const URL_CALLMEBOT = 'https://api.callmebot.com/whatsapp.php';
 
 // URL da API do ThingSpeak (canal 2228913)
@@ -10,7 +10,7 @@ const URL_THINGSPEAK = 'https://api.thingspeak.com/channels/2228913/feeds.json?r
 
 // Envia alerta via WhatsApp
 async function enviarAlertaViaWhatsapp(nome, sistolica, diastolica) {
-  const mensagem = `⚠️ Alerta: ${nome} está com pressão alterada!\nSistólica: ${sistolica} mmHg\nDiastólica: ${diastolica} mmHg`;
+  const mensagem = `⚠️ Alerta: ${Kayo} está com pressão alterada!\nSistólica: ${sistolica} mmHg\nDiastólica: ${diastolica} mmHg`;
 
   try {
     const response = await axios.get(URL_CALLMEBOT, {
